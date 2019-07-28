@@ -33,7 +33,6 @@ public:
     // Constructors
     Matrix();
     Matrix(size_t _rows, size_t _cols);  // Creating of null-matrix
-    // TODO: Repair null constructor
 
     // Destructors
     ~Matrix();

@@ -13,7 +13,11 @@ Matrix::Matrix() {
 }
 
 Matrix::Matrix(size_t _rows, size_t _cols) {
+    rows = 0;
+    cols = 0;
     dataInit(_rows, _cols);
+    rows = _rows;
+    cols = _cols;
 }
 
 // Destructors
@@ -36,6 +40,10 @@ void Matrix::matrixSet(type** _data, size_t _rows, size_t _cols) {
 }
 
 void Matrix::matrixPrint() const {
+    if (data == NULL) {
+        cout << "No set data" << endl;
+        return;
+    }
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
 			printf("%.16f ", data[i][j]);
