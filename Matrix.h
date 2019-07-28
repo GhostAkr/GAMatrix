@@ -10,8 +10,6 @@
 #include <fstream>
 #include <cmath>
 
-#define TEST cout << "Test" << endl;  // Macros for debugging
-
 typedef double type;  // For calculations with high accuracy
 //typedef float type;  // For calculations with usual accuracy
 
@@ -63,8 +61,6 @@ public:
     void matrixNullSet(size_t _rows, size_t _cols);
     void matrixOneSet(size_t _rows, size_t _cols);
 
-    // Other methods
-    int mainElement(int iteration);  // Searches for main element in matrix by lines
 };
 
 #endif //LAB_1_MATRIX_H
